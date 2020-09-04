@@ -9,9 +9,33 @@
     <script>
       questionsArr = [
         { q: "Los Angeles is the capital of California", a: "f" },
+        { q: "The first US president was George Washington", a: "t" },
+        { q: "Baseball was invented in 1839", a: "t" },
+        {
+          q: "The lead actor of the film 'Braveheart' is Russell Crowe",
+          a: "f",
+        },
+        { q: "Chocolate was a form of currency in the Mayan times", a: "t" },
+        { q: "Hawaii is located in the Atlantic Ocean", a: "f" },
+        {
+          q:
+            "The first video game console was the Super Nintendo Entertainment System",
+          a: "f",
+        },
+        {
+          q: "Ludwig van Beethoven was older than Wolfgang Amadeus Mozart",
+          a: "f",
+        },
+        { q: "Mars is less massive than Earth", a: "t" },
+        { q: "Fortune cookies were invented in the US", a: "t" },
       ];
-
-      console.log(questionsArr[0]);
+      
+      quiz();
+      function quiz() {
+        for (let i = 0; i < questionsArr.length; i++) {
+          console.log(questionsArr[i].q);
+        }
+      }
     </script>
   </body>
 </html>
