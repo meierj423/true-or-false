@@ -48,6 +48,14 @@
           }
         }
         alert(`You got ${correct} correct and ${incorrect} incorrect`);
+        replay();
+      }
+
+      function replay() {
+        let playAgain = confirm("Play again?");
+        if (playAgain) {
+          quiz();
+        }
       }
     </script>
   </body>
